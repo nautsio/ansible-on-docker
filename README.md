@@ -13,4 +13,5 @@ These aliases can be used to have the Ansible Docker image behave like a local i
 ```bash
 alias ansible='docker run -it --rm -m 128m -v ${HOME}:${HOME}:ro -v ${HOME}/.ssh:/ssh:ro -w ${PWD} cargonauts/ansible ansible'
 alias ansible-playbook='docker run -it --rm -m 128m -v ${HOME}:${HOME}:ro -v ${HOME}/.ssh:/ssh:ro -w ${PWD} cargonauts/ansible ansible-playbook'
+alias ansible-vault='docker run -it --rm -m 128m -v ${HOME}:${HOME}:ro -v ${HOME}/.ssh:/ssh:ro -w ${PWD} cargonauts/ansible ansible-vault'
 ```
