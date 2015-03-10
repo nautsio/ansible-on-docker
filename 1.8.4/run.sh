@@ -1,6 +1,6 @@
 #!/bin/sh
 
-eval `ssh-agent -s > /dev/null 2>&1`
+eval `ssh-agent -s` > /dev/null 2>&1
 
 for key in `ls /ssh/*_rsa`
 do
